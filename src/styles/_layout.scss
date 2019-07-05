@@ -1,0 +1,42 @@
+/* NEW CSS GRID LAYOUT */
+.container {
+  margin: 4% 2% 0% 2%;
+  min-height: 100vh;
+  display: grid;
+}
+
+.section-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: $gray-background;
+}
+@media screen and (max-width: 600px) {
+  .section-container {
+    padding: 10px 10px 10px 10px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .section-container {
+    padding: 20px 80px 20px 80px;
+    min-height: 100vh;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .section-container {
+    padding: 40px 120px 40px 120px;
+    min-height: 100vh;
+  }
+}
+
+.section-backdrop svg {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}

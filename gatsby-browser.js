@@ -5,3 +5,8 @@
  */
 
 // You can delete this file if you're not using it
+
+require("typeface-ibm-plex-mono")
+require("typeface-ibm-plex-serif")
+require("typeface-ibm-plex-sans-condensed")
+require("typeface-ibm-plex-sans")
