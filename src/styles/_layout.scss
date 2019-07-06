@@ -1,10 +1,15 @@
 /* NEW CSS GRID LAYOUT */
+.canvas {
+  margin: 10px auto;
+  padding: 40px;
+  max-width: 1600px;
+  min-height: 100vh;
+}
 .container {
   margin: 4% 2% 0% 2%;
   min-height: 100vh;
   display: grid;
 }
-
 .section-container {
   flex: 1;
   display: flex;
@@ -29,7 +34,6 @@
     min-height: 100vh;
   }
 }
-
 .section-backdrop svg {
   position: absolute;
   top: 0px;

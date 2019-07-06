@@ -12,16 +12,15 @@ const IndexPage = () => (
       <svg></svg>
     </div>
     <div className="section-text">
-      <svg></svg>
+      <h1>Hi people</h1>
+      <p>Welcome to your new Gatsby site.</p>
+      <p>Now go build something great.</p>
+      <code>testing this code look</code>
+      <div>
+        <Image />
+      </div>
+      <Link to="/page-2/">Go to page 2</Link>
     </div>
-    {/* <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <code>testing this code look</code>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 )
 
