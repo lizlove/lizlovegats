@@ -130,6 +130,15 @@ h6 {
   font-size: 0.78405rem;
   line-height: 1.1;
 }
+a {
+  color: $purple;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: $purple;
+  background-color: $purple-highlight;
+}
 hgroup {
   margin-left: 0;
   margin-right: 0;

@@ -1,11 +1,12 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "lizlovegats",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A toy site to test Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Elizabeth Lovero, github.com/lizlove",
   "dependencies": {
     "@ibm/plex": "^2.0.0",
+    "d3": "^5.9.7",
     "gatsby": "^2.10.4",
     "gatsby-image": "^2.2.3",
     "gatsby-plugin-manifest": "^2.2.0",
@@ -21,10 +22,13 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-typography": "^0.16.19",
+    "textures": "^1.2.0",
     "typeface-ibm-plex-mono": "^0.0.61",
     "typeface-ibm-plex-sans": "^0.0.61",
     "typeface-ibm-plex-sans-condensed": "^0.0.61",
-    "typeface-ibm-plex-serif": "^0.0.61"
+    "typeface-ibm-plex-serif": "^0.0.61",
+    "typography": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

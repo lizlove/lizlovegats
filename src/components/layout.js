@@ -25,8 +25,8 @@ const Layout = ({ children }) => {
 
   return (
     <div className="canvas">
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <main className="section-container">{children}</main>
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+      <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
