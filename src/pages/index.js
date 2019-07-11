@@ -14,7 +14,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Lovero" />
     <section className="section section-intro">
       <div className="section-backdrop"></div>
       <div className="section-text-container-intro">
@@ -45,7 +45,12 @@ const IndexPage = () => (
             <p>
               {" "}
               Hi 👋 I'm <a>Liz</a>, an engineer currently at the{" "}
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://www.simonsfoundation.org/flatiron/">
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://www.simonsfoundation.org/flatiron/"
+              >
                 Flatiron Institute
               </a>{" "}
               in 🗽 New York City. I specialize in front-end development and
@@ -53,23 +58,46 @@ const IndexPage = () => (
             </p>
             <p>
               {" "}
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="mailto:elizabethlovero@gmail.com">Contact me</a> or keep
-              scrolling 👇 for more. You should also follow{" "}
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://www.instagram.com/lillenlen/">Lenny,</a> my
-              scruffy rescue dog.
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="mailto:elizabethlovero@gmail.com"
+              >
+                Contact me
+              </a>{" "}
+              or keep scrolling 👇 for more. You should also follow{" "}
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://www.instagram.com/lillenlen/"
+              >
+                Lenny,
+              </a>{" "}
+              my scruffy rescue dog.
             </p>
           </div>
           <div className="section-intro-icons">
             <span class="social-icon-background"></span>
             <div className="social-icon-container">
-              <a className="social-icon-link" aria-describedby="new-window" target="_blank" rel="noopener" href="https://github.com/lizlove">
+              <a
+                className="social-icon-link"
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://github.com/lizlove"
+              >
                 <img src={github} alt="github" className="social-icon" />
               </a>
             </div>
             <div className="social-icon-container">
               <a
                 className="social-icon-link"
-                aria-describedby="new-window" target="_blank" rel="noopener" href="https://www.instagram.com/lizzardl/"
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://www.instagram.com/lizzardl/"
               >
                 <img src={insta} alt="insta" className="social-icon" />
               </a>
@@ -77,7 +105,10 @@ const IndexPage = () => (
             <div className="social-icon-container">
               <a
                 className="social-icon-link"
-                aria-describedby="new-window" target="_blank" rel="noopener" href="https://twitter.com/lizzardl"
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://twitter.com/lizzardl"
               >
                 <img src={twitter} alt="twitter" className="social-icon" />
               </a>
@@ -85,7 +116,10 @@ const IndexPage = () => (
             <div className="social-icon-container">
               <a
                 className="social-icon-link"
-                aria-describedby="new-window" target="_blank" rel="noopener" href="https://www.linkedin.com/in/elizabeth-lovero-b2ab1867/"
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://www.linkedin.com/in/elizabeth-lovero-b2ab1867/"
               >
                 <img src={linkedin} alt="linkedin" className="social-icon" />
               </a>
@@ -118,7 +152,14 @@ const IndexPage = () => (
         <div className="section-body-container">
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="http://spike-front.herokuapp.com/">SpikeForest</a>
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="http://spike-front.herokuapp.com/"
+              >
+                SpikeForest
+              </a>
               <span className="date">2019</span>
             </h3>
             <p>
@@ -127,7 +168,12 @@ const IndexPage = () => (
               evaluating and comparing spike sorting algorithms for
               neurophysiology data analysis. It is a project of the Center for
               Computational Mathematics at the{" "}
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://www.simonsfoundation.org/flatiron/">
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://www.simonsfoundation.org/flatiron/"
+              >
                 Flatiron Institute.
               </a>
             </p>
@@ -172,21 +218,42 @@ const IndexPage = () => (
           </div> */}
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com">Donut Time</a>
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://medium.com"
+              >
+                Donut Time
+              </a>
               <span className="date">2018</span>
             </h3>
             <p>
               Show gratitude to coworkers on a Slack workspace using custom
               donut emojis and slash commands. Built upon the Howdy.ai platform
               for a company hackathon at{" "}
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://havenlife.com/home.html">Haven Life</a>, Donut
-              Time also includes a leaderboard to track the most thanked and
-              most thankful employees.
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://havenlife.com/home.html"
+              >
+                Haven Life
+              </a>
+              , Donut Time also includes a leaderboard to track the most thanked
+              and most thankful employees.
             </p>
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com">Sorting Hat</a>
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://medium.com"
+              >
+                Sorting Hat
+              </a>
               <span className="date">2017</span>
             </h3>
             <p>
@@ -198,18 +265,39 @@ const IndexPage = () => (
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://decibel-nyc.herokuapp.com/">publicradio.info</a>
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://decibel-nyc.herokuapp.com/"
+              >
+                publicradio.info
+              </a>
               <span className="date">2017</span>
             </h3>
             <p>
               Publicradio.info is a web app for listening to noncommercial news,
               culture, and art. The rugged anti-design was featured on{" "}
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://brutalistwebsites.com/">Brutalist Websites.</a>
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://brutalistwebsites.com/"
+              >
+                Brutalist Websites.
+              </a>
             </p>
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://decibel-nyc.herokuapp.com/">dB NYC</a>
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://decibel-nyc.herokuapp.com/"
+              >
+                dB NYC
+              </a>
               <span className="date">2015</span>
             </h3>
             <p>
@@ -222,7 +310,14 @@ const IndexPage = () => (
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://decibel-nyc.herokuapp.com/">ArchiveView</a>
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://decibel-nyc.herokuapp.com/"
+              >
+                ArchiveView
+              </a>
               <span className="date">2014</span>
             </h3>
             <p>
@@ -263,7 +358,12 @@ const IndexPage = () => (
           </div> */}
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://docs.google.com/presentation/d/1BpPYy4RnZVmQ57fyDnbW8V55xRjkDETPWYrVdx44MoU/edit?usp=sharing">
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://docs.google.com/presentation/d/1BpPYy4RnZVmQ57fyDnbW8V55xRjkDETPWYrVdx44MoU/edit?usp=sharing"
+              >
                 Design in the Deep End
               </a>{" "}
               <span className="date">2019</span>
@@ -277,7 +377,12 @@ const IndexPage = () => (
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com/@lizzardl/integrating-multiple-recaptchas-into-angular-2-d30c3816f4bf">
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://medium.com/@lizzardl/integrating-multiple-recaptchas-into-angular-2-d30c3816f4bf"
+              >
                 Integrating multiple reCAPTCHAs into Angular 2
               </a>
               <span className="date">2018</span>
@@ -290,7 +395,12 @@ const IndexPage = () => (
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://github.com/lizlove/talks/blob/master/DigitalArtPreservation.pdf">
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://github.com/lizlove/talks/blob/master/DigitalArtPreservation.pdf"
+              >
                 Digital Preservation
               </a>{" "}
               <span className="date">2017</span>
@@ -303,7 +413,12 @@ const IndexPage = () => (
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com/the-data-experience/d3-js-data-visualization-with-javascript-for-beginners-8617e68eebc6">
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://medium.com/the-data-experience/d3-js-data-visualization-with-javascript-for-beginners-8617e68eebc6"
+              >
                 D3.js — Data Visualization with JS for beginners
               </a>{" "}
               <span className="date">2015</span>
@@ -316,7 +431,12 @@ const IndexPage = () => (
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com/@lizzardl/how-i-learned-about-programming-from-marcel-duchamp-1e9ea1dc9cd6">
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://medium.com/@lizzardl/how-i-learned-about-programming-from-marcel-duchamp-1e9ea1dc9cd6"
+              >
                 What I learned about programming from Marcel Duchamp
               </a>
               <span className="date">2015</span>
@@ -356,7 +476,12 @@ const IndexPage = () => (
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://www.simonsfoundation.org/flatiron/">
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://www.simonsfoundation.org/flatiron/"
+              >
                 Flatiron Institute
               </a>
               <span className="date">2018 - present</span>
@@ -365,14 +490,26 @@ const IndexPage = () => (
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://havenlife.com/home.html">MassMutual</a>
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://havenlife.com/home.html"
+              >
+                MassMutual
+              </a>
               <span className="date">2017 - 2018</span>
             </h3>
             <p>Developer, Haven Life</p>
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=261785627">
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener"
+                href="https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=261785627"
+              >
                 Simple Labs, Inc.
               </a>
               <span className="date">2015 - 2017</span>
