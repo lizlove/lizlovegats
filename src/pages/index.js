@@ -45,7 +45,7 @@ const IndexPage = () => (
             <p>
               {" "}
               Hi 👋 I'm <a>Liz</a>, an engineer currently at the{" "}
-              <a href="https://www.simonsfoundation.org/flatiron/">
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://www.simonsfoundation.org/flatiron/">
                 Flatiron Institute
               </a>{" "}
               in 🗽 New York City. I specialize in front-end development and
@@ -53,23 +53,23 @@ const IndexPage = () => (
             </p>
             <p>
               {" "}
-              <a href="mailto:elizabethlovero@gmail.com">Contact me</a> or keep
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="mailto:elizabethlovero@gmail.com">Contact me</a> or keep
               scrolling 👇 for more. You should also follow{" "}
-              <a href="https://www.instagram.com/lillenlen/">Lenny,</a> my
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://www.instagram.com/lillenlen/">Lenny,</a> my
               scruffy rescue dog.
             </p>
           </div>
           <div className="section-intro-icons">
             <span class="social-icon-background"></span>
             <div className="social-icon-container">
-              <a className="social-icon-link" href="https://github.com/lizlove">
+              <a className="social-icon-link" aria-describedby="new-window" target="_blank" rel="noopener" href="https://github.com/lizlove">
                 <img src={github} alt="github" className="social-icon" />
               </a>
             </div>
             <div className="social-icon-container">
               <a
                 className="social-icon-link"
-                href="https://www.instagram.com/lizzardl/"
+                aria-describedby="new-window" target="_blank" rel="noopener" href="https://www.instagram.com/lizzardl/"
               >
                 <img src={insta} alt="insta" className="social-icon" />
               </a>
@@ -77,7 +77,7 @@ const IndexPage = () => (
             <div className="social-icon-container">
               <a
                 className="social-icon-link"
-                href="https://twitter.com/lizzardl"
+                aria-describedby="new-window" target="_blank" rel="noopener" href="https://twitter.com/lizzardl"
               >
                 <img src={twitter} alt="twitter" className="social-icon" />
               </a>
@@ -85,7 +85,7 @@ const IndexPage = () => (
             <div className="social-icon-container">
               <a
                 className="social-icon-link"
-                href="https://www.linkedin.com/in/elizabeth-lovero-b2ab1867/"
+                aria-describedby="new-window" target="_blank" rel="noopener" href="https://www.linkedin.com/in/elizabeth-lovero-b2ab1867/"
               >
                 <img src={linkedin} alt="linkedin" className="social-icon" />
               </a>
@@ -111,14 +111,14 @@ const IndexPage = () => (
           <div className="section-heading">
             <h2 className="section-title">Projects</h2>
             <div className="section-subtitle">
-              <p>Things built with code</p>
+              <p>Things built mostly with code</p>
             </div>
           </div>
         </div>
         <div className="section-body-container">
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a href="http://spike-front.herokuapp.com/">SpikeForest</a>
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="http://spike-front.herokuapp.com/">SpikeForest</a>
               <span className="date">2019</span>
             </h3>
             <p>
@@ -127,14 +127,15 @@ const IndexPage = () => (
               evaluating and comparing spike sorting algorithms for
               neurophysiology data analysis. It is a project of the Center for
               Computational Mathematics at the{" "}
-              <a href="https://www.simonsfoundation.org/flatiron/">
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://www.simonsfoundation.org/flatiron/">
                 Flatiron Institute.
               </a>
             </p>
           </div>
-          <div className="item-copy-container">
+          {/* TODO: Thank you chart */}
+          {/* <div className="item-copy-container">
             <h3 className="item-title">
-              <a href="https://medium.com">Be Thankful for What You've Got</a>
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com">Be Thankful for What You've Got</a>
               <span className="date">2019</span>
             </h3>
             <p>
@@ -144,10 +145,11 @@ const IndexPage = () => (
               everyone from doctors to Lyft drivers, family members to folks who
               offered seats on the subway.
             </p>
-          </div>
-          <div className="item-copy-container">
+          </div> */}
+          {/* TODO: Ok, Not Ok */}
+          {/* <div className="item-copy-container">
             <h3 className="item-title">
-              <a href="https://medium.com">Ok, Not Ok</a>
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com">Ok, Not Ok</a>
               <span className="date">2019</span>
             </h3>
             <p>
@@ -156,24 +158,35 @@ const IndexPage = () => (
               someone is over-reacting and want some crowd-sourced backup?
               Submit to Ok, Not Ok and see what the world thinks!
             </p>
-          </div>
+          </div> */}
+          {/* TODO: Nightly */}
+          {/* <div className="item-copy-container">
+            <h3 className="item-title">
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://nightlyreview.org">Nightly Review</a>
+              <span className="date">2015-2019</span>
+            </h3>
+            <p>
+              {" "}
+             Nightly is a tool for drafting personal inventories and sharing them with an accountability partner via email.
+            </p>
+          </div> */}
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a href="https://medium.com">Donut Time</a>
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com">Donut Time</a>
               <span className="date">2018</span>
             </h3>
             <p>
               Show gratitude to coworkers on a Slack workspace using custom
               donut emojis and slash commands. Built upon the Howdy.ai platform
               for a company hackathon at{" "}
-              <a href="https://havenlife.com/home.html">Haven Life</a>, Donut
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://havenlife.com/home.html">Haven Life</a>, Donut
               Time also includes a leaderboard to track the most thanked and
               most thankful employees.
             </p>
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a href="https://medium.com">Sorting Hat</a>
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com">Sorting Hat</a>
               <span className="date">2017</span>
             </h3>
             <p>
@@ -185,18 +198,18 @@ const IndexPage = () => (
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a href="https://decibel-nyc.herokuapp.com/">publicradio.info</a>
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://decibel-nyc.herokuapp.com/">publicradio.info</a>
               <span className="date">2017</span>
             </h3>
             <p>
               Publicradio.info is a web app for listening to noncommercial news,
               culture, and art. The rugged anti-design was featured on{" "}
-              <a href="https://brutalistwebsites.com/">Brutalist Websites.</a>
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://brutalistwebsites.com/">Brutalist Websites.</a>
             </p>
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a href="https://decibel-nyc.herokuapp.com/">dB NYC</a>
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://decibel-nyc.herokuapp.com/">dB NYC</a>
               <span className="date">2015</span>
             </h3>
             <p>
@@ -209,7 +222,7 @@ const IndexPage = () => (
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a href="https://decibel-nyc.herokuapp.com/">ArchiveView</a>
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://decibel-nyc.herokuapp.com/">ArchiveView</a>
               <span className="date">2014</span>
             </h3>
             <p>
@@ -232,25 +245,25 @@ const IndexPage = () => (
           <div className="section-heading">
             <h2 className="section-title">Writing</h2>
             <div className="section-subtitle">
-              <p>Words with friends</p>
+              <p>Blog posts, talks, and other words</p>
             </div>
           </div>
         </div>
         <div className="section-body-container">
-          <div className="item-copy-container">
+          {/* TODO: Newsletter */}
+          {/* <div className="item-copy-container">
             <p>
               {" "}
               I write an occasional newsletter about data visualization, design,
               and the detritus of digital life called <a>Chart of the Week</a>.
-              {/* TODO: Newsletter link */}
-              <a href="https://medium.com/@sachagreif" class="button">
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com/@sachagreif" class="button">
                 Sign up here to receive the newsletter
               </a>
             </p>
-          </div>
+          </div> */}
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a href="https://docs.google.com/presentation/d/1BpPYy4RnZVmQ57fyDnbW8V55xRjkDETPWYrVdx44MoU/edit?usp=sharing">
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://docs.google.com/presentation/d/1BpPYy4RnZVmQ57fyDnbW8V55xRjkDETPWYrVdx44MoU/edit?usp=sharing">
                 Design in the Deep End
               </a>{" "}
               <span className="date">2019</span>
@@ -264,7 +277,7 @@ const IndexPage = () => (
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a href="https://medium.com/@lizzardl/integrating-multiple-recaptchas-into-angular-2-d30c3816f4bf">
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com/@lizzardl/integrating-multiple-recaptchas-into-angular-2-d30c3816f4bf">
                 Integrating multiple reCAPTCHAs into Angular 2
               </a>
               <span className="date">2018</span>
@@ -277,16 +290,20 @@ const IndexPage = () => (
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a href="https://github.com/lizlove/talks/blob/master/DigitalArtPreservation.pdf">
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://github.com/lizlove/talks/blob/master/DigitalArtPreservation.pdf">
                 Digital Preservation
               </a>{" "}
               <span className="date">2017</span>
             </h3>
-            <p> A passion project talk given at Manhattan JS.</p>
+            <p>
+              {" "}
+              A talk given ManhattanJS encouraging Javascript developers to help
+              preserve digital art and cultural history.{" "}
+            </p>
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a href="https://medium.com/the-data-experience/d3-js-data-visualization-with-javascript-for-beginners-8617e68eebc6">
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com/the-data-experience/d3-js-data-visualization-with-javascript-for-beginners-8617e68eebc6">
                 D3.js — Data Visualization with JS for beginners
               </a>{" "}
               <span className="date">2015</span>
@@ -299,15 +316,14 @@ const IndexPage = () => (
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a href="https://medium.com/@lizzardl/how-i-learned-about-programming-from-marcel-duchamp-1e9ea1dc9cd6">
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com/@lizzardl/how-i-learned-about-programming-from-marcel-duchamp-1e9ea1dc9cd6">
                 What I learned about programming from Marcel Duchamp
               </a>
               <span className="date">2015</span>
             </h3>
             <p>
               {" "}
-              When I transitioned careers from art to programming, I compiled
-              this list of concepts gleaned from the study of Duchamp that are
+              A list of concepts gleaned from the study of Duchamp that are
               surprisingly applicable to beginning developers.
             </p>
           </div>
@@ -334,14 +350,34 @@ const IndexPage = () => (
               {" "}
               I'm 👩🏻‍💻 a Full Stack Engineer experienced in both art and
               technology. I am passionate about human-centric design, visual
-              storytelling, and digital preservation.
+              storytelling, and digital preservation. In a previous life, I was
+              a contemporary art curator.
             </p>
           </div>
           <div className="item-copy-container">
-            <p>
-              In a previous life, I was a contemporary art curator. For more
-              detailed career info, please download my resume.{" "}
-            </p>
+            <h3 className="item-title">
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://www.simonsfoundation.org/flatiron/">
+                Flatiron Institute
+              </a>
+              <span className="date">2018 - present</span>
+            </h3>
+            <p>Data Visualization Engineer</p>
+          </div>
+          <div className="item-copy-container">
+            <h3 className="item-title">
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://havenlife.com/home.html">MassMutual</a>
+              <span className="date">2017 - 2018</span>
+            </h3>
+            <p>Developer, Haven Life</p>
+          </div>
+          <div className="item-copy-container">
+            <h3 className="item-title">
+              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=261785627">
+                Simple Labs, Inc.
+              </a>
+              <span className="date">2015 - 2017</span>
+            </h3>
+            <p>Engineer</p>
           </div>
         </div>
       </div>
