@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<html>
+  <head>
+    <title>HRC and Briscoe Finding Aids by Collection Type over Time</title>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+    <style>
+      @font-face {
+        font-family: "Arvo-Regular";
+        src: url("Arvo-Regular.ttf");
+      }
+
+      h1,
+      h2 {
+        font-family: Arvo-Regular, Georgia, serif;
+      }
+
+      body {
+        margin: 50px;
+        background-color: white;
+        font-family: sans-serif;
+        font-size: 9pt;
+        color: gray;
+      }
+
+      rect.bordered {
+        stroke: #e6e6e6;
+        stroke-width: 2px;
+      }
+
+      text.mono {
+        font-size: 9pt;
+        font-family: sans-serif;
+        fill: #30383b;
+      }
+
+      #tooltip {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        padding: 10px;
+        background-color: white;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+      }
+
+      #tooltip.hidden {
+        display: none;
+      }
+
+      #tooltip p {
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Ransom and Briscoe finding aids by collection type and date</h2>
+
+    <!--Visualization javascript-->
+    <div id="chart">
+      <script type="text/javascript">
+        /*layout of grid */
+
+        var margin = { top: 50, right: 0, bottom: 100, left: 155 },
+          width = 1360 - margin.left - margin.right,
+          height = 830 - margin.top - margin.bottom,
+          gridSize = Math.floor(width / 24),
+          legendElementWidth = gridSize * 1.5,
+          buckets = 9,
+          colors = [
+            "#ffffd9",
+            "#edf8b1",
+            "#c7e9b4",
+            "#7fcdbb",
+            "#41b6c4",
+            "#1d91c0",
+            "#225ea8",
+            "#253494",
+            "#081d58",
+          ], // alternatively colorbrewer.YlGnBu[9]
+          groups = [
+            "Briscoe - Records",
+            "Briscoe - Papers",
+            "Briscoe - Collections",
+            "Ransom - Records",
+            "Ransom - Papers",
+            "Ransom - Collections",
+          ],
+          years = [
+            "2000",
+            "2001",
+            "2002",
+            "2003",
+            "2004",
+            "2005",
+            "2006",
+            "2007",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+          ]
+
+        /*import from csv and assign datapoints */
+        d3.csv(
+          "taro.csv",
+          function(d) {
+            return {
+              group: +d.group,
+              year: +d.year,
+              value: +d.value,
+            }
+          },
+
+          function(error, data) {
+            /*calculate max to determine scale */
+            var colorScale = d3.scale
+              .quantile()
+              .domain([
+                0,
+                buckets - 1,
+                d3.max(data, function(d) {
+                  return d.value
+                }),
+              ])
+              .range(colors)
+
+            /*make SVG canvas */
+            var svg = d3
+              .select("#chart")
+              .append("svg")
+              .attr("width", width + margin.left + margin.right)
+              .attr("height", height + margin.top + margin.bottom)
+              .append("g")
+              .attr(
+                "transform",
+                "translate(" + margin.left + "," + margin.top + ")"
+              )
+
+            /*label groups */
+            var groupLabels = svg
+              .selectAll(".groupLabel")
+              .data(groups)
+              .enter()
+              .append("text")
+              .text(function(d) {
+                return d
+              })
+              .attr("x", 0)
+              .attr("y", function(d, i) {
+                return i * gridSize
+              })
+              .style("text-anchor", "end")
+              .attr("transform", "translate(-6," + gridSize / 1.5 + ")")
+              .attr("class", "mono")
+
+            /*label years */
+            var timeLabels = svg
+              .selectAll(".yearLabel")
+              .data(years)
+              .enter()
+              .append("text")
+              .text(function(d) {
+                return d
+              })
+              .attr("x", function(d, i) {
+                return i * gridSize
+              })
+              .attr("y", 0)
+              .style("text-anchor", "middle")
+              .attr("transform", "translate(" + gridSize / 2 + ", -6)")
+              .attr("class", "mono")
+
+            /*plot the heatmap*/
+            var heatMap = svg
+              .selectAll(".year")
+              .data(data)
+              .enter()
+              .append("rect")
+              .attr("x", function(d) {
+                return (d.year - 2000) * gridSize
+              })
+              .attr("y", function(d) {
+                return (d.group + 0.25) * gridSize
+              })
+              .attr("rx", 4)
+              .attr("ry", 4)
+              .attr("class", "year bordered")
+              .attr("width", gridSize)
+              .attr("height", gridSize)
+              .style("fill", colors[0])
+
+            heatMap
+              .transition()
+              .duration(1000)
+              .style("fill", function(d) {
+                return colorScale(d.value)
+              })
+
+            heatMap.append("title").text(function(d) {
+              return "The number of collections is " + d.value
+            })
+
+            /*make mouseover highlighting and text*/
+            heatMap.on("mouseover", function(d) {
+              d3.select(this).style("fill", "orange")
+
+              //Get this bar's x/y values, then augment for the tooltip
+              var xPosition = 950
+              var yPosition = 155
+
+              //Update the tooltip position and value
+              d3.select("#tooltip")
+                .style("left", xPosition + "px")
+                .style("top", yPosition + "px")
+
+              //Show the tooltip
+              d3.select("#tooltip").classed("hidden", false)
+            })
+
+            /*make mouseout highlighting*/
+            heatMap.on("mouseout", function(d) {
+              d3.select(this).style("fill", function(d) {
+                return colorScale(d.value)
+              })
+
+              d3.select("#tooltip").classed("hidden", true)
+            })
+
+            /*make legend using colors */
+            var legend = svg
+              .selectAll(".legend")
+              .data([0].concat(colorScale.quantiles()), function(d) {
+                return d
+              })
+              .enter()
+              .append("g")
+              .attr("class", "legend")
+
+            /*make legend boxes */
+            legend
+              .append("rect")
+              .attr("x", function(d, i) {
+                return legendElementWidth * i
+              })
+              .attr("y", height / 1.8)
+              .attr("width", legendElementWidth)
+              .attr("height", gridSize / 2)
+              .style("fill", function(d, i) {
+                return colors[i]
+              })
+
+            /*make legend labels*/
+            legend
+              .append("text")
+              .attr("class", "mono")
+              .text(function(d) {
+                return "≥ " + Math.round(d)
+              })
+              .attr("x", function(d, i) {
+                return legendElementWidth * i
+              })
+              .attr("y", height / 1.8 + gridSize)
+          }
+        )
+      </script>
+    </div>
+  </body>
+</html>

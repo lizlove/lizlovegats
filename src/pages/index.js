@@ -3,20 +3,19 @@ import { Link } from "gatsby"
 import twitter from "../images/twitter-logo.svg"
 import linkedin from "../images/linkedin-logo.svg"
 import github from "../images/github-logo.svg"
-import insta from "../images/instagram-logo.svg"
 import ghost from "../images/ghost-logo.svg"
 // import textures from "textures"
 // import * as d3 from "d3"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+// import Image from "../components/image"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Lovero" />
     <section className="section section-intro">
-      <div className="section-backdrop"></div>
+      <div className="section-backdrop intro-backdrop"></div>
       <div className="section-text-container-intro">
         <div className="section-icon-container">
           <div className="center-icon">
@@ -44,11 +43,11 @@ const IndexPage = () => (
           <div className="section-intro-copy">
             <p>
               {" "}
-              Hi 👋 I'm <a>Liz</a>, an engineer currently at the{" "}
+              Hi 👋 I'm <Link to="/">Liz</Link>, an engineer currently at the{" "}
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://www.simonsfoundation.org/flatiron/"
               >
                 Flatiron Institute
@@ -61,7 +60,7 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="mailto:elizabethlovero@gmail.com"
               >
                 Contact me
@@ -70,7 +69,7 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://www.instagram.com/lillenlen/"
               >
                 Lenny,
@@ -79,13 +78,13 @@ const IndexPage = () => (
             </p>
           </div>
           <div className="section-intro-icons">
-            <span class="social-icon-background"></span>
+            <span className="social-icon-background"></span>
             <div className="social-icon-container">
               <a
                 className="social-icon-link"
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://github.com/lizlove"
               >
                 <img src={github} alt="github" className="social-icon" />
@@ -96,18 +95,7 @@ const IndexPage = () => (
                 className="social-icon-link"
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
-                href="https://www.instagram.com/lizzardl/"
-              >
-                <img src={insta} alt="insta" className="social-icon" />
-              </a>
-            </div>
-            <div className="social-icon-container">
-              <a
-                className="social-icon-link"
-                aria-describedby="new-window"
-                target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://twitter.com/lizzardl"
               >
                 <img src={twitter} alt="twitter" className="social-icon" />
@@ -118,19 +106,19 @@ const IndexPage = () => (
                 className="social-icon-link"
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/elizabeth-lovero-b2ab1867/"
               >
                 <img src={linkedin} alt="linkedin" className="social-icon" />
               </a>
             </div>
             <div className="social-icon-container">
-              <a className="social-icon-link ghost">
+              <a href="/" className="social-icon-link ghost">
                 {/* TODO: Add Ghost Mode */}
                 <img src={ghost} alt="ghost" className="social-icon" />
               </a>
             </div>
-            <span class="social-icon-background"></span>
+            <span className="social-icon-background"></span>
           </div>
         </div>{" "}
       </div>
@@ -155,7 +143,7 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="http://spike-front.herokuapp.com/"
               >
                 SpikeForest
@@ -171,7 +159,7 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://www.simonsfoundation.org/flatiron/"
               >
                 Flatiron Institute.
@@ -181,7 +169,7 @@ const IndexPage = () => (
           {/* TODO: Thank you chart */}
           {/* <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com">Be Thankful for What You've Got</a>
+              <a aria-describedby="new-window" target="_blank" rel="noopener noreferrer" href="https://medium.com">Be Thankful for What You've Got</a>
               <span className="date">2019</span>
             </h3>
             <p>
@@ -195,7 +183,7 @@ const IndexPage = () => (
           {/* TODO: Ok, Not Ok */}
           {/* <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com">Ok, Not Ok</a>
+              <a aria-describedby="new-window" target="_blank" rel="noopener noreferrer" href="https://medium.com">Ok, Not Ok</a>
               <span className="date">2019</span>
             </h3>
             <p>
@@ -208,7 +196,7 @@ const IndexPage = () => (
           {/* TODO: Nightly */}
           {/* <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://nightlyreview.org">Nightly Review</a>
+              <a aria-describedby="new-window" target="_blank" rel="noopener noreferrer" href="https://nightlyreview.org">Nightly Review</a>
               <span className="date">2015-2019</span>
             </h3>
             <p>
@@ -221,8 +209,8 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
-                href="https://medium.com"
+                rel="noopener noreferrer"
+                href="https://github.com/lizlove/donut-time-bot"
               >
                 Donut Time
               </a>
@@ -235,7 +223,7 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://havenlife.com/home.html"
               >
                 Haven Life
@@ -249,8 +237,8 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
-                href="https://medium.com"
+                rel="noopener noreferrer"
+                href="http://sortinghat.co/"
               >
                 Sorting Hat
               </a>
@@ -268,8 +256,8 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
-                href="https://decibel-nyc.herokuapp.com/"
+                rel="noopener noreferrer"
+                href="https://publicradio.info/"
               >
                 publicradio.info
               </a>
@@ -281,20 +269,21 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://brutalistwebsites.com/"
               >
                 Brutalist Websites.
               </a>
             </p>
           </div>
+          {/* TODO: Update dB NYC - move images to internal page*/}
           <div className="item-copy-container">
             <h3 className="item-title">
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
-                href="https://decibel-nyc.herokuapp.com/"
+                rel="noopener noreferrer"
+                href="https://github.com/lizlove/db-nyc"
               >
                 dB NYC
               </a>
@@ -310,14 +299,7 @@ const IndexPage = () => (
           </div>
           <div className="item-copy-container">
             <h3 className="item-title">
-              <a
-                aria-describedby="new-window"
-                target="_blank"
-                rel="noopener"
-                href="https://decibel-nyc.herokuapp.com/"
-              >
-                ArchiveView
-              </a>
+              <Link to="/archiveview">ArchiveView</Link>
               <span className="date">2014</span>
             </h3>
             <p>
@@ -351,7 +333,7 @@ const IndexPage = () => (
               {" "}
               I write an occasional newsletter about data visualization, design,
               and the detritus of digital life called <a>Chart of the Week</a>.
-              <a aria-describedby="new-window" target="_blank" rel="noopener" href="https://medium.com/@sachagreif" class="button">
+              <a aria-describedby="new-window" target="_blank" rel="noopener noreferrer" href="https://medium.com/@sachagreif" className="button">
                 Sign up here to receive the newsletter
               </a>
             </p>
@@ -361,7 +343,7 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://docs.google.com/presentation/d/1BpPYy4RnZVmQ57fyDnbW8V55xRjkDETPWYrVdx44MoU/edit?usp=sharing"
               >
                 Design in the Deep End
@@ -380,7 +362,7 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://medium.com/@lizzardl/integrating-multiple-recaptchas-into-angular-2-d30c3816f4bf"
               >
                 Integrating multiple reCAPTCHAs into Angular 2
@@ -398,7 +380,7 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://github.com/lizlove/talks/blob/master/DigitalArtPreservation.pdf"
               >
                 Digital Preservation
@@ -416,7 +398,7 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://medium.com/the-data-experience/d3-js-data-visualization-with-javascript-for-beginners-8617e68eebc6"
               >
                 D3.js — Data Visualization with JS for beginners
@@ -434,7 +416,7 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://medium.com/@lizzardl/how-i-learned-about-programming-from-marcel-duchamp-1e9ea1dc9cd6"
               >
                 What I learned about programming from Marcel Duchamp
@@ -479,7 +461,7 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://www.simonsfoundation.org/flatiron/"
               >
                 Flatiron Institute
@@ -493,7 +475,7 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://havenlife.com/home.html"
               >
                 MassMutual
@@ -507,7 +489,7 @@ const IndexPage = () => (
               <a
                 aria-describedby="new-window"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=261785627"
               >
                 Simple Labs, Inc.

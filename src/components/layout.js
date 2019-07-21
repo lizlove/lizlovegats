@@ -7,25 +7,11 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
 import "../styles/styles.scss"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <div className="canvas">
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <main>{children}</main>
       <footer className="footer">
         © {new Date().getFullYear()}, Elizabeth Lovero. Built with
