@@ -1,7 +1,7 @@
 {
   "name": "lizlovegats",
   "private": true,
-  "description": "Personal portfolio site - a toy project in Gatsby",
+  "description": "Personal portfolio site",
   "version": "0.1.0",
   "author": "Elizabeth Lovero, github.com/lizlove",
   "dependencies": {
@@ -43,8 +43,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "yarn run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "now-build": "yarn run build"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",
