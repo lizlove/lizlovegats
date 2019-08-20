@@ -29,3 +29,14 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## 🏅 Acknowledgments
 
 - [Gatsby Starter Default](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-default/) was used to bootstrap this site.
+
+## 🎥 Coming Soon
+
+- Ghost mode
+- Thank you chart
+- OK, Not OK
+- Nightly
+- Update heroku for dB NYC
+- Create newsletter
+- Add textures.js
+- Add ArchiveView in D3.js

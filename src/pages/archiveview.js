@@ -1,5 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import * as d3 from "d3"
+import taroCsv from "../images/taro.csv"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,6 +17,49 @@ const SecondPage = () => {
       }
     }
   `)
+
+  const margin = { top: 50, right: 10, bottom: 100, left: 10 }
+  const width = 1360 - margin.left - margin.right
+  const height = 830 - margin.top - margin.bottom
+  const gridSize = Math.floor(width / 24)
+  const legendElementWidth = gridSize * 1.5
+  const buckets = 9
+  const colors = [
+    "#ffffd9",
+    "#edf8b1",
+    "#c7e9b4",
+    "#7fcdbb",
+    "#41b6c4",
+    "#1d91c0",
+    "#225ea8",
+    "#253494",
+    "#081d58",
+  ]
+  const groups = [
+    "Briscoe - Records",
+    "Briscoe - Papers",
+    "Briscoe - Collections",
+    "Ransom - Records",
+    "Ransom - Papers",
+    "Ransom - Collections",
+  ]
+  const years = [
+    "2000",
+    "2001",
+    "2002",
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+  ]
+
   return (
     <Layout>
       <SEO title="Archive View" />
@@ -33,14 +78,36 @@ const SecondPage = () => {
                   Built on D3.js library, this interactive chart compares
                   collection development at the two largest University of Texas
                   archives over time. For this project I used a jQuery scraper
-                  to collect data from University XML documents and RegEx parser
-                  to normalize data.
+                  to collect data from University XML documents and RegEx to
+                  normalize data.
                 </p>
               </div>
             </div>
           </div>
           <div className="section-body-container">
-            <div id="chart"></div>
+            <div className="chart-heatmap">
+              <svg
+                width={width + margin.left + margin.right}
+                height={height + margin.top + margin.bottom}
+              >
+                <g
+                  color="green"
+                  transform={`translate(" + margin.left + "," + margin.top + ")`}
+                >
+                  {/* {data.map(d => (
+                    <g className="arc" key={`a${d.data.age}`}>
+                      <path d={arc(d)} fill={color(d.data.age)} />
+                      <text
+                        transform={`translate(${arc.centroid(d)})`}
+                        dy=".35em"
+                      >
+                        {d.data.age}
+                      </text>
+                    </g>
+                  ))} */}
+                </g>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
