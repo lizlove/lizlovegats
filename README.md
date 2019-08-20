@@ -1,30 +1,10 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <h1 align="center">
   Elizabeth Lovero Portfolio Page
 </h1>
 
-## 👩‍💻 About
+## 👩🏻‍💻 About
 
 Personal portfolio site.
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-See deployment for notes on how to deploy the project on a live system.
-
-## Startup Scripts
-
-To start the Donuttime Bot use:
-
-```
-node bot.js
-```
-
-To start the Donuttime Board run:
-
-```
-node app.js
-```
 
 ## 🚀 Quick start
 
@@ -40,16 +20,14 @@ node app.js
 
     The site is now running at `http://localhost:8000`!
 
-## License
+## 📋 License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Authors
+## ✍️ Author
 
 - **Liz Lovero** - [lizlove](https://github.com/lizlove)
 
 ## Acknowledgments
 
-Thanks to the following:
-
-- [Gatsby](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-default/) used to bootstrap this static site quickly
+- [Gatsby Starter Default](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-default/) was used to bootstrap this site.
