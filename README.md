@@ -4,13 +4,11 @@
 
 ## 👩🏻‍💻 About
 
-Personal portfolio site.
+Personal portfolio site for Elizabeth Lovero built using Gatsby.
 
 ## 🚀 Quick start
 
 1.  **Start developing.**
-
-    To start the application locally, run the following:
 
     ```sh
     gatsby develop
@@ -28,6 +26,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 - **Liz Lovero** - [lizlove](https://github.com/lizlove)
 
-## Acknowledgments
+## 🏅 Acknowledgments
 
 - [Gatsby Starter Default](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-default/) was used to bootstrap this site.
