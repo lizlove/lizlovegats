@@ -144,7 +144,7 @@ const IndexPage = () => (
                 aria-describedby="new-window"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="http://spike-front.herokuapp.com/"
+                href="http://spikeforest.flatironinstitute.org/"
               >
                 SpikeForest
               </a>
@@ -181,10 +181,17 @@ const IndexPage = () => (
             </p>
           </div> */}
           {/* TODO: Ok, Not Ok */}
-          {/* <div className="item-copy-container">
+          <div className="item-copy-container">
             <h3 className="item-title">
-              <a aria-describedby="new-window" target="_blank" rel="noopener noreferrer" href="https://medium.com">Ok, Not Ok</a>
-              <span className="date">2019</span>
+              <a
+                aria-describedby="new-window"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://ok-not-ok.herokuapp.com/stories/page/1"
+              >
+                Ok, Not Ok
+              </a>
+              <span className="date">2020</span>
             </h3>
             <p>
               {" "}
@@ -192,7 +199,7 @@ const IndexPage = () => (
               someone is over-reacting and want some crowd-sourced backup?
               Submit to Ok, Not Ok and see what the world thinks!
             </p>
-          </div> */}
+          </div>
           {/* TODO: Nightly */}
           {/* <div className="item-copy-container">
             <h3 className="item-title">
