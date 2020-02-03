@@ -363,6 +363,15 @@
     margin-left: 80px;
   }
 }
+.section-chart-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1201px) {
+  .chart-heatmap {
+    margin-top: 40px;
+  }
+}
 .item-copy-container {
   margin-top: 40px;
 }

@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import * as d3 from "d3"
-import taroCsv from "../images/taro.csv"
+// import * as d3 from "d3"
+// import taroCsv from "./taro.csv"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,7 +18,7 @@ const SecondPage = () => {
     }
   `)
 
-  const margin = { top: 50, right: 10, bottom: 100, left: 10 }
+  const margin = { top: 40, right: 10, bottom: 80, left: 10 }
   const width = 1360 - margin.left - margin.right
   const height = 830 - margin.top - margin.bottom
   const gridSize = Math.floor(width / 24)
@@ -84,7 +84,7 @@ const SecondPage = () => {
               </div>
             </div>
           </div>
-          <div className="section-body-container">
+          <div className="section-chart-container">
             <div className="chart-heatmap">
               <svg
                 width={width + margin.left + margin.right}
@@ -94,6 +94,7 @@ const SecondPage = () => {
                   color="green"
                   transform={`translate(" + margin.left + "," + margin.top + ")`}
                 >
+                  <rect width="100%" height="100%" fill="currentColor" />
                   {/* {data.map(d => (
                     <g className="arc" key={`a${d.data.age}`}>
                       <path d={arc(d)} fill={color(d.data.age)} />
