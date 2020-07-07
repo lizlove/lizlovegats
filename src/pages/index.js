@@ -13,7 +13,27 @@ import SEO from "../components/seo"
 
 class IndexPage extends React.Component {
   toggleGhostMode() {
-    console.log("👻 ToggleGhost")
+    let css =
+      "html {-webkit-filter: invert(100%);" +
+      "-moz-filter: invert(100%);" +
+      "-o-filter: invert(100%);" +
+      "-ms-filter: invert(100%); }"
+
+    let head = document.head
+    let inversion = document.getElementById("invert")
+    if (inversion) {
+      head.removeChild(inversion)
+    } else {
+      let style = document.createElement("style")
+      style.type = "text/css"
+      style.id = "invert"
+      if (style.styleSheet) {
+        style.styleSheet.cssText = css
+      } else {
+        style.appendChild(document.createTextNode(css))
+      }
+      head.appendChild(style)
+    }
   }
   render() {
     return (
@@ -123,12 +143,12 @@ class IndexPage extends React.Component {
                   </a>
                 </div>
                 <div className="social-icon-container">
-                  <a href="/" className="social-icon-link ghost">
+                  <a className="social-icon-link ghost">
                     <img
                       src={ghost}
                       alt="ghost"
                       className="social-icon"
-                      onClick={this.toggleGhostMode()}
+                      onClick={() => this.toggleGhostMode()}
                     />
                   </a>
                 </div>
