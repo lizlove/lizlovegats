@@ -178,7 +178,7 @@ class IndexPage extends React.Component {
                     aria-describedby="new-window"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="http://spike-front.herokuapp.com/"
+                    href="http://spikeforest.flatironinstitute.org/"
                   >
                     SpikeForest
                   </a>
@@ -188,16 +188,17 @@ class IndexPage extends React.Component {
                   {" "}
                   SpikeForest is a website and open source computing framework
                   for evaluating and comparing spike sorting algorithms for
-                  neurophysiology data analysis. It is a project of the Center
-                  for Computational Mathematics at the{" "}
+                  neurophysiology data analysis. The project is documented in a
+                  May 2020{" "}
                   <a
                     aria-describedby="new-window"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://www.simonsfoundation.org/flatiron/"
+                    href="https://elifesciences.org/articles/55167"
                   >
-                    Flatiron Institute.
-                  </a>
+                    {" "}
+                    eLife paper.
+                  </a>{" "}
                 </p>
               </div>
               {/* TODO: Thank you chart */}
