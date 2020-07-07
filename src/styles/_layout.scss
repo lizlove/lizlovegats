@@ -4,6 +4,11 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: $gray-background;
+  background: linear-gradient(
+    to bottom,
+    $gray-background,
+    saturate($gray-background, 5%)
+  );
 }
 .section-backdrop svg {
   position: absolute;
