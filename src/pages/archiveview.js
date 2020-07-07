@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import * as d3 from "d3"
-import taroCsv from "../images/taro.csv"
+// import taroCsv from "../images/taro.csv"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
