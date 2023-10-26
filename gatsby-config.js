@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Elizabeth Lovero`,
-    description: `Elizabeth Lovero is a developer currently living in New York City, where she designs data visualizations at the Flatiron Institute and periodically writes about development, design, and the detritus of digital life.`,
+    description: `Elizabeth Lovero is a developer and technical product manager based in Chicago & Brooklyn, where she designs data visualizations and periodically writes about development, design, and the detritus of digital life.`,
     author: `github.com/lizlove`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

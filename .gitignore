@@ -62,9 +62,17 @@ public
 .DS_Store
 
 # Yarn
+.yarn/*
+.yarnrc.yml
 yarn-error.log
 .pnp/
 .pnp.js
+.pnp.cjs
+.pnp.loader.mjs
+
 # Yarn Integrity file
 .yarn-integrity
-yarn.lock
+
+# Editor Config
+.editorconfig
+.gitattributes

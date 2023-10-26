@@ -11,6 +11,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import Image from "../components/image"
 
+
 class IndexPage extends React.Component {
   toggleGhostMode() {
     let css =
@@ -68,17 +69,8 @@ class IndexPage extends React.Component {
               <div className="section-intro-copy">
                 <p>
                   {" "}
-                  Hi 👋 I'm <Link to="/">Liz</Link>, an engineer currently at
-                  the{" "}
-                  <a
-                    aria-describedby="new-window"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.simonsfoundation.org/flatiron/"
-                  >
-                    Flatiron Institute
-                  </a>{" "}
-                  in 🗽 New York City. I specialize in front-end development and
+                  Hi 👋 I'm <Link to="/">Liz</Link>, an engineer and product manager based in 🌭 Chicago and {" "}
+                  🗽 New York City. I specialize in front-end development and
                   data visualization 📈.
                 </p>
                 <p>
