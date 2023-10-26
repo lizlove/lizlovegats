@@ -11,24 +11,35 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: ["gatsby-plugin-sass", 
-  {resolve: "gatsby-plugin-google-gtag", options: {
-    trackingIds: [ 
-      "G-YDB4BQT5TK" // Google Analytics / GA
-    ]
-  }}, "gatsby-plugin-image", "gatsby-plugin-sitemap", {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      "icon": "src/images/love-icon.png"
-    }
-  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
+  plugins: [
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        sassOptions: {
+          includePaths: ["./src/styles"],
+        },
+      },
     },
-    __key: "images"
-  }]
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: [
+          "G-YDB4BQT5TK" // Google Analytics / GA
+        ]
+      }
+    }, "gatsby-plugin-image", "gatsby-plugin-sitemap", {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        "icon": "src/images/love-icon.png"
+      }
+    }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "images",
+        "path": "./src/images/"
+      },
+      __key: "images"
+    }]
 };
 
 export default config;
