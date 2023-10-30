@@ -1,16 +1,10 @@
 import * as React from "react";
 import { useGetItems } from "../hooks/use-get-items";
 import { SectionBody } from "./sectionBody";
-import { ItemProps } from "./item";
+import { ItemProps, SectionProps } from "../types/all-types";
 
-export interface SectionProps {
-  name: string;
-  title: string;
-  subtitle: string;
-}
-
-export const Section = ({ name, title, subtitle }: SectionProps) => {
-  const items: ItemProps[] = useGetItems(name);
+export const Section = ({ section, title, subtitle }: SectionProps) => {
+  const items: ItemProps[] | undefined = useGetItems(section);
 
   return (
     <section className="section">

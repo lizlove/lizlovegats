@@ -1,12 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
-
-export interface ItemProps {
-  title: string;
-  date?: string;
-  description?: string;
-  link?: string;
-}
+import { ItemProps } from "../types/all-types";
 
 export const Item = ({ title, date, description, link }: ItemProps) => {
   return (
