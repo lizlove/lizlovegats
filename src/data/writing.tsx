@@ -1,9 +1,11 @@
-export const writing = [
+import { ItemProps } from "../types/all-types";
+
+export const writing: ItemProps[] = [
   {
     title: "elife paper - ADD ME",
     date: "2021",
     description: "A guide to creating a data visualization portfolio.",
-    link: "https://medium.com/@lizzardl/how-to-make-a-data-visualization-portfolio-6f5b4b7c00e8",
+    link: "https://elifesciences.org/articles/55167",
   },
   {
     title: "Design in the Deep End",

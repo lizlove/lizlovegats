@@ -1,14 +1,20 @@
 import * as React from "react";
 import { writing } from "../data/writing";
-import { ItemProps, SectionTypes } from "../types/all-types";
+import { bio } from "../data/bio";
+import { SectionTypes } from "../types/all-types";
 
 export const useGetItems = (section: SectionTypes) => {
+  console.log("section", section);
   if (!section) {
     return;
   }
-  const items: ItemProps[] = [];
-  if (section && section === "writing") {
-    items.push(...writing);
+  if (section === "writing") {
+    console.log("writing", writing);
+    return writing;
+  } else if (section === "bio") {
+    console.log("bio", bio);
+    return bio;
+  } else {
+    return;
   }
-  return items;
 };

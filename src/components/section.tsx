@@ -1,10 +1,11 @@
 import * as React from "react";
 import { useGetItems } from "../hooks/use-get-items";
-import { SectionBody } from "./sectionBody";
+import { Item } from "./item";
 import { ItemProps, SectionProps } from "../types/all-types";
 
 export const Section = ({ section, title, subtitle }: SectionProps) => {
   const items: ItemProps[] | undefined = useGetItems(section);
+  console.log("items", items, "section props", section);
 
   return (
     <section className="section">
@@ -21,7 +22,18 @@ export const Section = ({ section, title, subtitle }: SectionProps) => {
             </div>
           </div>
         </div>
-        {items && <SectionBody {...items} />}
+        <div className="section-body-container">
+          {section === "bio" && (
+            <div className="item-copy-container">
+              <p>
+                I am 👩🏻‍💻 a Full Stack Engineer and Product Manager experienced in
+                both art and technology. In a previous life, I was a
+                contemporary art curator.
+              </p>
+            </div>
+          )}
+          {items && items.map((item) => <Item {...item} />)}
+        </div>
       </div>
     </section>
   );

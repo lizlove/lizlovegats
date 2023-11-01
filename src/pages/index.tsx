@@ -4,23 +4,24 @@ import { SEO } from "../components/seo";
 import { Intro } from "../components/intro";
 import { Layout } from "../components/layout";
 import { Section } from "../components/section";
+import { SectionProps } from "../types/all-types";
 
 const IndexPage: React.FC<PageProps> = () => {
-  const sections = [
+  const sections: SectionProps[] = [
     {
       title: "Projects",
       subtitle: "Things built mostly with code",
-      name: "projects",
+      section: "projects",
     },
     {
       title: "Writing",
       subtitle: "Blog posts, talks, and other words",
-      name: "writing",
+      section: "writing",
     },
     {
       title: "Bio",
       subtitle: "A bit more about me.",
-      name: "bio",
+      section: "bio",
     },
   ];
 
@@ -29,7 +30,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <SEO title="Liz Lovero" />
       <Intro />
       {sections.map((section) => (
-        <Section {...section} key={section.name + "-section"} />
+        <Section {...section} key={section.section + "-section"} />
       ))}
     </Layout>
   );

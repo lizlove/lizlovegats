@@ -1,11 +1,11 @@
 export interface ItemProps {
-  title: string;
+  title?: string;
   date?: string;
   description?: string;
   link?: string;
 }
 
-export type SectionTypes = 'writing' | 'projects' | 'about';
+export type SectionTypes = 'writing' | 'projects' | 'bio';
 
 export interface SectionProps {
   title: string;
