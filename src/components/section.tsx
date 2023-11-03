@@ -5,7 +5,6 @@ import { ItemProps, SectionProps } from "../types/all-types";
 
 export const Section = ({ section, title, subtitle }: SectionProps) => {
   const items: ItemProps[] | undefined = useGetItems(section);
-  console.log("items", items, "section props", section);
 
   return (
     <section className="section">

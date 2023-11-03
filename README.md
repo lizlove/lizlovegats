@@ -10,11 +10,11 @@ Personal portfolio site for Elizabeth Lovero built using Gatsby.
 
 1.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Navigate into your site’s directory and start it up.
 
     ```shell
-    cd my-gatsby-site/
-    npm run develop
+    cd lizlovegats
+    npm run start
     ```
 
 2.  **Open the code and start customizing!**
@@ -47,8 +47,8 @@ This project is licensed under the Apache License, version 2.0 - see the [LICENS
 - **Liz Lovero** - [lizlove](https://github.com/lizlove)
 
 ## 🎥 Coming Soon
+
 - New CV
-- Seeing Solitary
 - Thank you chart
 - OK, Not OK
 - Nightly
