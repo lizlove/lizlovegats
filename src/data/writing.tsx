@@ -2,16 +2,18 @@ import { ItemProps } from "../types/all-types";
 
 export const writing: ItemProps[] = [
   {
-    title: "elife paper - ADD ME",
+    title:
+      "SpikeForest, reproducible web-facing ground-truth validation of automated neural spike sorters",
     date: "2021",
-    description: "A guide to creating a data visualization portfolio.",
+    description:
+      "A paper on the SpikeForest project from the May 2020 issue of eLife, a prestigious peer-reviewed journal of life sciences and medicine.",
     link: "https://elifesciences.org/articles/55167",
   },
   {
     title: "Design in the Deep End",
     date: "2019",
     description:
-      "Talk to Analytics Club at the Department of Education on how to approach data visualization and design when you are not a subject matter expert.",
+      "Slides from a talk given at the New York City Department of Education on approaches to data visualization for subject matter novices.",
     link: "https://docs.google.com/presentation/d/1BpPYy4RnZVmQ57fyDnbW8V55xRjkDETPWYrVdx44MoU/edit?usp=sharing",
   },
   {
@@ -34,5 +36,6 @@ export const writing: ItemProps[] = [
     description:
       " A simple introduction to the D3 library written for the coding novice.",
     link: "https://medium.com/the-data-experience/d3-js-data-visualization-with-javascript-for-beginners-8617e68eebc6",
+    hide: true,
   },
 ];

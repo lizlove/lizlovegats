@@ -3,6 +3,7 @@ export interface ItemProps {
   date?: string;
   description?: string;
   link?: string;
+  hide?: boolean;
 }
 
 export type SectionTypes = "writing" | "projects" | "bio";

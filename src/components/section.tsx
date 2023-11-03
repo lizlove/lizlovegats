@@ -31,7 +31,7 @@ export const Section = ({ section, title, subtitle }: SectionProps) => {
               </p>
             </div>
           )}
-          {items && items.map((item) => <Item {...item} />)}
+          {!!items && items.map((item) => <Item {...item} />)}
         </div>
       </div>
     </section>
