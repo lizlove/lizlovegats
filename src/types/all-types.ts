@@ -5,7 +5,7 @@ export interface ItemProps {
   link?: string;
 }
 
-export type SectionTypes = 'writing' | 'projects' | 'bio';
+export type SectionTypes = "writing" | "projects" | "bio";
 
 export interface SectionProps {
   title: string;

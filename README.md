@@ -48,10 +48,10 @@ This project is licensed under the Apache License, version 2.0 - see the [LICENS
 
 ## 🎥 Coming Soon
 
-- New CV
-- Thank you chart
-- OK, Not OK
-- Nightly
-- Update heroku for dB NYC
-- Add textures.js
-- Add ArchiveView in D3.js
+    - New CV
+    - Thank you chart
+    - OK, Not OK
+    - Nightly
+    - Update heroku for dB NYC
+    - Add textures.js
+    - Add ArchiveView in D3.js

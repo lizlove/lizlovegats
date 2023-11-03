@@ -13,7 +13,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint --ext .js,.ts,.tsx"
+    "lint": "eslint --ext .js,.ts,.tsx --fix  src"
   },
   "dependencies": {
     "gatsby": "^5.12.4",
@@ -36,8 +36,9 @@
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
     "eslint": "^8.52.0",
-    "eslint-webpack-plugin": "^4.0.1",
-    "gatsby-plugin-eslint": "^4.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "3.0.3",
     "typescript": "^5.2.2"
   }
 }

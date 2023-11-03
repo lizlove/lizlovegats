@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import { ItemProps } from "../types/all-types";
 
 export const Item = ({ title, date, description, link }: ItemProps) => {

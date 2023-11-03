@@ -1,12 +1,12 @@
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby";
 
 export interface SiteMetadata {
-  title: string
-  description: string
-  author: string
-  image: string
-  siteUrl: string
-  icon: string
+  title: string;
+  description: string;
+  author: string;
+  image: string;
+  siteUrl: string;
+  icon: string;
 }
 
 export const useSiteMetadata = () => {
@@ -22,7 +22,7 @@ export const useSiteMetadata = () => {
         }
       }
     }
-  `)
+  `);
 
-  return data.site.siteMetadata
-}
+  return data.site.siteMetadata;
+};

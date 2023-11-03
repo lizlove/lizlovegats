@@ -1,7 +1,7 @@
 import * as React from "react";
-import { useGetItems } from "../hooks/use-get-items";
-import { Item } from "./item";
 import { ItemProps, SectionProps } from "../types/all-types";
+import { Item } from "./item";
+import { useGetItems } from "../hooks/use-get-items";
 
 export const Section = ({ section, title, subtitle }: SectionProps) => {
   const items: ItemProps[] | undefined = useGetItems(section);

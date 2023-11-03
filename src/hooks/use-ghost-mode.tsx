@@ -1,6 +1,6 @@
 export const useGhostMode = () => {
   {
-    let css =
+    const css =
       "html {-webkit-filter: invert(100%);" +
       "-moz-filter: invert(100%);" +
       "-o-filter: invert(100%);" +

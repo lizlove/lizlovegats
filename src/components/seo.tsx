@@ -1,15 +1,16 @@
-import * as React from "react"
-import { useSiteMetadata, SiteMetadata } from "../hooks/use-site-metadata"
+import * as React from "react";
+import { SiteMetadata, useSiteMetadata } from "../hooks/use-site-metadata";
 
 interface SEOProps {
-  description?: string
-  title?: string
-  pathname?: string
-  children?: React.ReactNode
+  description?: string;
+  title?: string;
+  pathname?: string;
+  children?: React.ReactNode;
 }
 
 export const SEO = (props: SEOProps) => {
-  const { title, description, image, siteUrl, author}: SiteMetadata = useSiteMetadata()
+  const { title, description, image, siteUrl, author }: SiteMetadata =
+    useSiteMetadata();
 
   return (
     <>
@@ -25,5 +26,5 @@ export const SEO = (props: SEOProps) => {
       <meta name="twitter:creator" content={author} />
       {props.children}
     </>
-  )
-}
+  );
+};
