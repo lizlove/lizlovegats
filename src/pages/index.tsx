@@ -10,12 +10,12 @@ const IndexPage: React.FC<PageProps> = () => {
   const sections: SectionProps[] = [
     {
       title: "Projects",
-      subtitle: "Things built mostly with code",
+      subtitle: "A selection of things built mostly with code.",
       section: "projects",
     },
     {
       title: "Writing",
-      subtitle: "Blog posts, talks, and other words",
+      subtitle: "Selected papers, talks, and other words.",
       section: "writing",
     },
     {

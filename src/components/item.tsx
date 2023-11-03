@@ -4,7 +4,7 @@ import { ItemProps } from "../types/all-types";
 export const Item = ({ title, date, description, link, hide }: ItemProps) => {
   return (
     <>
-      {!!!hide ? (
+      {!hide ? (
         <div className="item-copy-container">
           <h3 className="item-title">
             <a
