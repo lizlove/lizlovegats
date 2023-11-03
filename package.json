@@ -13,7 +13,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint --ext .js,.ts,.tsx --fix  src"
+    "lint": "eslint --ext .js,.ts,.tsx --fix  src",
+    "prepare": "husky install"
   },
   "dependencies": {
     "gatsby": "^5.12.4",
