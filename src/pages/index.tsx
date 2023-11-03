@@ -1,10 +1,10 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
-import { SEO } from "../components/seo";
 import { Intro } from "../components/intro";
 import { Layout } from "../components/layout";
 import { Section } from "../components/section";
 import { SectionProps } from "../types/all-types";
+import { SEO } from "../components/seo";
 
 const IndexPage: React.FC<PageProps> = () => {
   const sections: SectionProps[] = [

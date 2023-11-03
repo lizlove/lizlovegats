@@ -1,8 +1,7 @@
-import * as React from "react";
 import { bio } from "../data/bio";
 import { projects } from "../data/projects";
-import { writing } from "../data/writing";
 import { SectionTypes } from "../types/all-types";
+import { writing } from "../data/writing";
 
 export const useGetItems = (section: SectionTypes) => {
   if (!section) {
