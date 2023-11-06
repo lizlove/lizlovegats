@@ -25,9 +25,18 @@ export const Section = ({ section, title, subtitle }: SectionProps) => {
           {section === "bio" && (
             <div className="item-copy-container">
               <p>
-                I am 👩🏻‍💻 a Full Stack Engineer and Product Manager experienced in
-                both art and technology. In a previous life, I was a
-                contemporary art curator.
+                I am 👩🏻‍💻 a Full Stack Engineer and Project Manager experienced in
+                both art and technology. Early in my career, I worked in
+                contemporary art. You can download my complete CV{" "}
+                <a
+                  aria-describedby="new-window"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="CV_Lovero_Extended_2023.pdf"
+                >
+                  here
+                </a>
+                .
               </p>
             </div>
           )}

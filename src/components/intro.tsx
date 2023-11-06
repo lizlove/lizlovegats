@@ -34,13 +34,12 @@ export const Intro = () => {
           <div className="section-intro-copy">
             <p>
               {" "}
-              Hi 👋 I'm <Link to="/">Liz</Link>, an engineer and manager based
-              in <span className="no-wrap">🌭 Chicago</span> and{" "}
-              <span className="no-wrap">🗽 New York City.</span> I specialize in
-              front-end development and data visualization 📈.
+              Hi 👋 I'm <Link to="/">Liz</Link>, a Full Stack Engineer and
+              Manager based in <span className="no-wrap">🌭 Chicago.</span>{" "}
+              Experienced in both art and technology, I specialize in 📈 data
+              visualization.
             </p>
             <p>
-              {" "}
               <a
                 aria-describedby="new-window"
                 target="_blank"
@@ -49,16 +48,7 @@ export const Intro = () => {
               >
                 Contact me
               </a>{" "}
-              or keep scrolling 👇 for more. You should also follow{" "}
-              <a
-                aria-describedby="new-window"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.instagram.com/lillenlen/"
-              >
-                Lenny,
-              </a>{" "}
-              my scruffy rescue dog.
+              or keep scrolling 👇 for more.
             </p>
           </div>
           <div className="section-intro-icons">
