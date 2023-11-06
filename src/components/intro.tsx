@@ -35,8 +35,7 @@ export const Intro = () => {
             <p>
               {" "}
               Hi 👋 I'm <Link to="/">Liz</Link>, an engineer and manager based
-              in <span className="no-wrap">🌭 Chicago</span> and{" "}
-              <span className="no-wrap">🗽 New York City.</span> I specialize in
+              in <span className="no-wrap">🌭 Chicago</span> I specialize in
               front-end development and data visualization 📈.
             </p>
             <p>
@@ -49,16 +48,7 @@ export const Intro = () => {
               >
                 Contact me
               </a>{" "}
-              or keep scrolling 👇 for more. You should also follow{" "}
-              <a
-                aria-describedby="new-window"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.instagram.com/lillenlen/"
-              >
-                Lenny,
-              </a>{" "}
-              my scruffy rescue dog.
+              or keep scrolling 👇 for more.
             </p>
           </div>
           <div className="section-intro-icons">
