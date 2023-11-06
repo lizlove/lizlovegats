@@ -34,12 +34,15 @@ export const Intro = () => {
           <div className="section-intro-copy">
             <p>
               {" "}
-              Hi 👋 I'm <Link to="/">Liz</Link>, an engineer and manager based
-              in <span className="no-wrap">🌭 Chicago</span> I specialize in
-              front-end development and data visualization 📈.
+              Hi 👋 I'm <Link to="/">Liz</Link>, a Full Stack Engineer and
+              Manager based in <span className="no-wrap">🌭 Chicago</span> I am
+              experienced in both art and technology.
             </p>
             <p>
               {" "}
+              I am looking to merge my programming, project management, and
+              communication skills in a role that advances compelling ideas in
+              the digital world.{" "}
               <a
                 aria-describedby="new-window"
                 target="_blank"
