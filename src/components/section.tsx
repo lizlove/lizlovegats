@@ -27,7 +27,16 @@ export const Section = ({ section, title, subtitle }: SectionProps) => {
               <p>
                 I am 👩🏻‍💻 a Full Stack Engineer and Project Manager experienced in
                 both art and technology. Early in my career, I worked in
-                contemporary art.
+                contemporary art. You can download my complete CV{" "}
+                <a
+                  aria-describedby="new-window"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="CV_Lovero_Extended_2023.pdf"
+                >
+                  here
+                </a>
+                .
               </p>
             </div>
           )}
