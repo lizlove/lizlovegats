@@ -35,14 +35,11 @@ export const Intro = () => {
             <p>
               {" "}
               Hi 👋 I'm <Link to="/">Liz</Link>, a Full Stack Engineer and
-              Manager based in <span className="no-wrap">🌭 Chicago</span> I am
-              experienced in both art and technology.
+              Manager based in <span className="no-wrap">🌭 Chicago.</span>{" "}
+              Experienced in both art and technology, I specialize in 📈 data
+              visualization.
             </p>
             <p>
-              {" "}
-              I am looking to merge my programming, project management, and
-              communication skills in a role that advances compelling ideas in
-              the digital world.{" "}
               <a
                 aria-describedby="new-window"
                 target="_blank"
