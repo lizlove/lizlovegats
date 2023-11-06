@@ -1,3 +1,4 @@
+import * as cvLovero from "../static/cv-lovero.pdf";
 import * as React from "react";
 import { ItemProps, SectionProps } from "../types/all-types";
 import { Item } from "./item";
@@ -32,7 +33,8 @@ export const Section = ({ section, title, subtitle }: SectionProps) => {
                   aria-describedby="new-window"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="CV_Lovero_Extended_2023.pdf"
+                  href={cvLovero.default}
+                  title="Download my CV"
                 >
                   here
                 </a>
