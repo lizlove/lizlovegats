@@ -39,7 +39,7 @@ export const bio: ItemProps[] = [
   },
   {
     title: "Whitney Museum of American Art",
-    date: "2007 - 2008",
+    date: "2007 - 08",
     description: "Curatorial Assistant, 2008 Biennial",
     link: "https://whitney.org/",
   },

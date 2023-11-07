@@ -55,7 +55,7 @@ export const projects: ItemProps[] = [
     title: "Publicradio.info",
     date: "2017",
     description:
-      "Publicradio.info is a web app for listening to noncommercial news, culture, and art. The rugged anti-design was featured on Brutalist Websites",
+      "Publicradio.info is a web app for listening to noncommercial news, culture, and art. The rugged anti-design was featured on Brutalist Websites.",
     link: "https://publicradio.info/",
   },
   {
