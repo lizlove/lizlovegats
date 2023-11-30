@@ -20,7 +20,7 @@ const IndexPage: React.FC<PageProps> = () => {
     },
     {
       title: "Bio",
-      subtitle: "A bit more about me.",
+      subtitle: "Notable employment history.",
       section: "bio",
     },
   ];

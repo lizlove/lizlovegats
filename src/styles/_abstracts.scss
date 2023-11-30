@@ -17,9 +17,21 @@ $red-alt: rgba(236, 85, 105, 1);
 // To invert call: invert($color, $weight: 100%)
 
 // Fonts
-$font-sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-  Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$font-sans:
+  "IBM Plex Sans",
+  -apple-system,
+  BlinkMacSystemFont,
+  Segoe UI,
+  Roboto,
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  Fira Sans,
+  Droid Sans,
+  Helvetica Neue,
+  sans-serif;
 $font-serif: "IBM Plex Serif", serif;
 $font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Roboto Mono",
   "Droid Sans Mono", "Liberation Mono", Menlo, Courier, monospace;
 $font-sans-con: "IBM Plex Sans Condensed", sans-serif;
+$font-alt: menlo, "andale mono", "courier new", sans-serif;

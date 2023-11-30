@@ -7,6 +7,7 @@ export const projects: ItemProps[] = [
     description:
       "Seeing Solitary presents data about the scope and impact of solitary confinement in prisons through out the United States and abroad. A project of the Liman Center at Yale Law School, the data dashboard is designed to help policymakers and the public understand solitary confinement and to inform efforts to reduce its use.",
     link: "https://seeingsolitary.limancenter.yale.edu/",
+    section: "projects",
   },
   {
     title: "Chern-Simons Caps of Rotating Black Hole",
@@ -14,6 +15,7 @@ export const projects: ItemProps[] = [
     description:
       "This black hole visualization illustrates universal axion movement and the impact of Chern-Simons gravity in the work of the Flatiron Institute's IDEA Scholar in Residence, Dr. Stephon Alexander. Built in both Blender and Three.js, this visualization was featured in the 2021 Flatiron Institute Annual Report.",
     link: "https://blackhole.vercel.app/",
+    section: "projects",
   },
   {
     title: "FlatHUB",
@@ -21,6 +23,7 @@ export const projects: ItemProps[] = [
     description:
       "Flatiron Institute Data Exploration and Comparison Hub (FlatHUB) is a web-based platform that enables researchers to easily explore and compare very large astrophysics simulation and observation datasets. Users can filter on multiple relevant fields, generate figures, and export their filtered data in a variety of formats.",
     link: "https://flathub.flatironinstitute.org/",
+    section: "projects",
   },
   {
     title: "SpikeForest",
@@ -28,6 +31,7 @@ export const projects: ItemProps[] = [
     description:
       "SpikeForest is a website and open source computing framework for evaluating and comparing spike sorting algorithms for neurophysiology data analysis. The project is documented in a May 2020 eLife paper, linked below in the Writing section.",
     link: "http://spikeforest.flatironinstitute.org/",
+    section: "projects",
   },
   {
     title: "Ok, Not Ok",
@@ -35,6 +39,7 @@ export const projects: ItemProps[] = [
     description:
       "Want to quickly get a read on an awkward interaction? Think that someone is over-reacting and want some crowd-sourced backup? Submit to Ok, Not Ok and see what the world thinks!",
     hide: true,
+    section: "projects",
   },
   {
     title: "Donut Time",
@@ -42,6 +47,7 @@ export const projects: ItemProps[] = [
     description:
       "Show gratitude to coworkers on a Slack workspace using custom donut emojis and slash commands. Built upon the Howdy.ai platform for a company hackathon at Haven Life, Donut Time also includes a leaderboard to track the most thanked and most thankful employees.",
     link: "https://github.com/lizlove/donut-time-bot",
+    section: "projects",
   },
   {
     title: "Nightly",
@@ -50,13 +56,15 @@ export const projects: ItemProps[] = [
       "Nightly is a tool for drafting personal inventories and sharing them with an accountability partner via email.",
     link: "https://nightly.lizlove.nyc/",
     hide: true,
+    section: "projects",
   },
   {
     title: "Publicradio.info",
     date: "2017",
     description:
-      "Publicradio.info is a web app for listening to noncommercial news, culture, and art. The rugged anti-design was featured on Brutalist Websites",
+      "Publicradio.info is a web app for listening to noncommercial news, culture, and art. The rugged anti-design was featured on Brutalist Websites.",
     link: "https://publicradio.info/",
+    section: "projects",
   },
   {
     title: "Sorting Hat",
@@ -64,6 +72,7 @@ export const projects: ItemProps[] = [
     description:
       "Want to quickly sort yourself into a Hogwarts House on Slack? Type your the `/sortinghat` slash command followed by a name of the witch or wizard to be sorted. Sorting Hat bot responds with a short rhyme and the banner of the selected House.",
     hide: true,
+    section: "projects",
   },
   {
     title: "dB NYC",
@@ -72,6 +81,7 @@ export const projects: ItemProps[] = [
       "dB NYC is a visualization of the noise pollution in New York City. The app was created using Ruby on Rails and maps the location of 311 noise complaints, emergency services, social check-ins, and social venue reviews to create a dynamic heat-map of noise broken down over a 24 hour period.",
     link: "https://github.com/lizlove/db-nyc",
     hide: true,
+    section: "projects",
   },
   {
     title: "ArchiveView",
@@ -80,5 +90,6 @@ export const projects: ItemProps[] = [
       "Built in D3.js, interactive chart compares collection development at the two largest University of Texas archives over time. Wrote jQuery scraper to collect data from University XML documents and RegEx parser to normalize data.",
     link: "/archiveview",
     hide: true,
+    section: "projects",
   },
 ];
