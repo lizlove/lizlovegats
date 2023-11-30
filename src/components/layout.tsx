@@ -10,9 +10,7 @@ export const Layout = ({ children }: LayoutProps) => {
     <div className="canvas">
       <main>{children}</main>
       <footer className="footer">
-        © {new Date().getFullYear()}, Elizabeth Lovero. Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        © {new Date().getFullYear()} Elizabeth Lovero
       </footer>
     </div>
   );

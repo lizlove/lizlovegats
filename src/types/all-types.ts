@@ -4,6 +4,7 @@ export interface ItemProps {
   description?: string;
   link?: string;
   hide?: boolean;
+  section: SectionTypes;
 }
 
 export type SectionTypes = "writing" | "projects" | "bio";
