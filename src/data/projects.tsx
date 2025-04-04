@@ -5,7 +5,7 @@ export const projects: ItemProps[] = [
     title: "Constellate",
     date: "2024",
     description:
-      "Constellate is a text and data mining platform previously supported ITHAKA. The platform aimed to advance computational literacy and text analysis skills across academia. Built in Typescript, Vue, and Python, Constellate featured a web-based interface for text analysis, including a dataset visualization GUI, a Jupyter notebook environment, and a library of datasets.",
+      "Constellate is a text and data mining platform at ITHAKA that aims to advance computational literacy skills across academia. Built in Typescript, Vue, and Python, Constellate featured a web-based interface for text analysis, including a visualization GUI, a Jupyter notebook environment, and a library of datasets.",
     link: "https://constellate.org/",
     section: "projects",
   },
