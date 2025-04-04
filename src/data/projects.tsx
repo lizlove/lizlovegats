@@ -2,6 +2,14 @@ import { ItemProps } from "../types/all-types";
 
 export const projects: ItemProps[] = [
   {
+    title: "Constellate",
+    date: "2024",
+    description:
+      "Constellate is a text and data mining platform at ITHAKA that aims to advance computational literacy skills across academia. Built in Typescript, Vue, and Python, Constellate featured a web-based interface for text analysis, including a visualization GUI, a Jupyter notebook environment, and a library of datasets.",
+    link: "https://constellate.org/",
+    section: "projects",
+  },
+  {
     title: "Seeing Solitary",
     date: "2023",
     description:
